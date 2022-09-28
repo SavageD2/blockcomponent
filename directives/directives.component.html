@@ -1,0 +1,20 @@
+<!--  -->
+<h1 [ngClass]="{'toggle-color': isAdmin}">{{title}}</h1>
+<section>
+    
+    <ng-container *ngIf="isAdmin">
+        <div class="btn-2">
+            <button>
+                Edit
+            </button>
+        </div>
+    </ng-container>
+        <div class="btn-1">
+            <button (click)="toggleTitle()">
+                View
+            </button>      
+        </div>
+        
+</section>
+
+
