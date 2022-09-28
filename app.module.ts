@@ -6,7 +6,8 @@ import { AppComponent } from './app.component';
 import { BlockComponent } from './block/block.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import {FormsModule} from '@angular/forms';
-import { DirectivesComponent } from './directives/directives.component'
+import { DirectivesComponent } from './directives/directives.component';
+import { SignupComponent } from './signup/signup.component'
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { DirectivesComponent } from './directives/directives.component'
     AppComponent,
     BlockComponent,
     UserProfileComponent,
-    DirectivesComponent
+    DirectivesComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
