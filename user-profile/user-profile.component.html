@@ -1,0 +1,23 @@
+<section class="user-detail">
+    <div class="profile-pic">
+        <img [src]="user.photo" alt="name">
+    </div>
+    <div class="profile-nfo">
+        <p>Name : {{user.name}}</p>
+        <p>Firstname : {{user.firstName}}</p>
+        
+        <button (click)="toggleAge()" id="btn">
+            {{buttonName}}
+        </button>
+
+        <ng-container *ngIf="show">
+            <div class="inputBtn">
+                <div><p>Age : {{user.age}}</p></div>
+            </div>
+        </ng-container>
+        <div>
+            <input [(ngModel)]="quote">
+            <p>{{quote}}</p>
+        </div>
+    </div>
+</section>
