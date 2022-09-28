@@ -17,7 +17,7 @@ export class UserProfileComponent implements OnInit {
   }
 
   show : boolean = false;
-  buttonName: string = 'Show';
+  buttonName: string = 'Show/Hide my age';
   quote :string = '';
   constructor() { }
 
@@ -25,9 +25,9 @@ export class UserProfileComponent implements OnInit {
     this.show = !this.show;
 
     if(this.show){
-      this.buttonName = "Hide";
+      this.buttonName = "Hide my age";
     }else{
-      this.buttonName = "Show";
+      this.buttonName = "Show my age";
     }
 
   }
